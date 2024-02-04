@@ -7,6 +7,7 @@ describe('Header', () => {
     const wrapper = shallow(<Login />);
     expect(wrapper.exists()).toEqual(true);
   });
+
   it('should have 2 input tags and 2 label tags', () => {
     const wrapper = shallow(<Login />);
     expect(wrapper.find('label')).toHaveLength(2);
