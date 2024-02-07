@@ -56,6 +56,7 @@ Notifications.propTypes = {
 
 Notifications.defaultProps = {
   displayDrawer: false,
+  listNotifications: [],
 };
 
 export default Notifications;
