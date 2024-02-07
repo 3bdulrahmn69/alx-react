@@ -14,6 +14,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        // type: 'asset/resource',
         use: [
           'file-loader',
           {
@@ -45,7 +46,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
+      name: 'index.html',
       inject: false,
       template: './dist/index.html',
     }),
